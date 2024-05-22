@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="clock">
+      <span class="out">
+        <div id="time"><span class="letter"></span></div>
+      </span>
+    </div>
+    <script>
+      setInterval(() => {
+        const time = document.querySelector("#time");
+        let date = new Date();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        if (hours > 12) {
+          hours = hours - 12;
+        }
+        if (minutes < 1) {
+          minutes = "0" + hours;
+        }
+        if (seconds < 10) {
+          seconds = "0" + seconds;
+        }
+        time.textContent = hours + ":" + minutes + ":" + seconds;
+      });
+    </script>
+  </body>
+</html>

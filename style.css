@@ -1,0 +1,27 @@
+.clock {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20%;
+}
+.deco {
+  background-color: black;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  cursor: default;
+}
+.out {
+  background-image: linear-gradient(to top, red, blue);
+  padding: 30px 40px;
+  border-radius: 9px;
+}
+
+#time {
+  font-size: 50px;
+  padding: 30px 60px;
+  color: gold;
+}
+body {
+  background-image: linear-gradient(green, #0b7285);
+}
